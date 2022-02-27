@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
-project(Gradebook)
+project(GradeBook)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Gradebook main.cpp)
+add_executable(GradeBook main.cpp)
