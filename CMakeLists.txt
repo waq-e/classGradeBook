@@ -3,4 +3,4 @@ project(GradeBook)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(GradeBook GradeBookTest.cpp)
+add_executable(GradeBook GradeBookTest.cpp GradeBook.cpp)
