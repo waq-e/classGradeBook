@@ -1,3 +1,7 @@
+//
+// main.cpp created by waqe on 20220226.  &-:
+//
+
 #include <iostream>
 
 using std::cout;
