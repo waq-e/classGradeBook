@@ -14,7 +14,15 @@ namespace waqe {
     }
 
     void GradeBook::setCourseName(string newName) {
-        courseName = newName;
+        if (newName.length() <= 25)
+            courseName = newName;
+        if (newName.length() > 25) {
+            courseName = newName.substr(0,25);
+
+            cout << "Name \"" << newName << "\" exceeds maximum length (25).\n"
+            << "Limiting courseName to first 25 characters.\n";
+        }
+
     }
 
     string GradeBook::getCourseName() { return courseName; }
