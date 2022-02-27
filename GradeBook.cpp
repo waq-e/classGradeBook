@@ -6,6 +6,7 @@
 #include <iostream>
 
 using std::cout;
+using std::cin;
 
 namespace waqe {
 
@@ -29,6 +30,25 @@ namespace waqe {
 
     void GradeBook::displayMessage() {
         cout << "Welcome to C++ course " << getCourseName() << '\n';
+    }
+
+    void GradeBook::determineClassAverage() {
+        int total{0};
+        int gradeCounter{1};
+        int grade{};
+        int average{};
+
+        while (gradeCounter <= 10) {
+            cout << "Enter grade: ";
+            cin >> grade;
+            total += grade;
+            gradeCounter++;
+        }
+
+        average = total / 10;
+
+        cout << "\nThe total of all 10 grades is " << total << '\n';
+        cout << "Class average is " << average << '\n';
     }
 } // namespace waqe
 

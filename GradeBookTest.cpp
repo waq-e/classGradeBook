@@ -18,5 +18,7 @@ int main() {
     << "\ngradeBook2 created for course: " << gradeBook2.getCourseName()
     << '\n';
 
+    gradeBook1.determineClassAverage();
+
     return 0;
 }
